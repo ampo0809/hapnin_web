@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* General Page Style */
+body, html {
+    margin: 0;
+    padding: 50px;
+    height: 100%;
+    background-color: #2C393E;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+}
+
+.content {
+    max-width: 50%;
+    padding-right: 50px;
+    color: white;
+}
+
+.teaser {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.description {
+    font-size: 24px;
+    display: block;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+}
+
+.available-via-link {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px; /* Adds space between text and image */
+}
+
+.available-via-link:hover {
+    color: #CDFFFF; /* Optional: Change color on hover */
+}
+
+.app-store-button {
+    width: 100px;
+    margin: 0; /* Adjust margin to align properly */
+}
+
+.app-store-button {
+    display: block;
+    width: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px; /* Ensures space between button and video */
+}
+
+.highlight {
+    color: #FA892E;
+    font-weight: 500;
+}
+
+iphone-16-max {
+    display: block; /* Ensure it's treated as a block element */
+    width: 100%; /* Set width to ensure responsiveness */
+    max-width: 280px; /* Set the maximum width to resemble an iPhone */
+    margin: 0 auto; /* Center the container */
+    position: relative; /* Position it relatively for internal layout */
+}
+
+iphone-16-max video {
+    width: 100%; /* Make video fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any potential inline spacing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body, html {
+        display: grid;
+        align-items: center;
+        padding: 16px; /* Reduce padding for smaller screens */
+    }
+
+    .content {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .teaser {
+        font-size: 38px;
+    }
+
+    .app-store-button {
+        margin-bottom: 10px; /* Ensures space between button and video */
+    }
+
+    .video-container {
+        width: 100%; /* Take full width */
+        max-width: none; /* Remove max-width restriction */
+        margin-top: 20px; /* Separate video from content */
+        padding: 0;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+    }
+}
