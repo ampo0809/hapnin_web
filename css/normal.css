@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
 
 /* General Page Style */
 body, html {
     margin: 0;
-    padding: 50px;
+    padding: 20px;
     height: 100%;
     background-color: #2C393E;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,22 +16,20 @@ body, html {
 }
 
 .content {
-    max-width: 50%;
-    padding-right: 50px;
-    color: white;
+    max-width: 800px;
+    margin-bottom: 40px;
 }
 
 .teaser {
-    font-size: 60px;
-    font-weight: 600;
-    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .description {
     font-size: 24px;
-    display: block;
-    font-weight: 400;
-    margin: 20px 0;
+    font-weight: 300;
+    margin-bottom: 30px;
 }
 
 .link-container {
@@ -39,46 +38,37 @@ body, html {
 }
 
 .available-via-link {
-    font-size: 24px;
-    font-weight: 400;
-    color: white;
+    font-size: 18px;
     text-decoration: none;
-    margin-right: 10px; /* Adds space between text and image */
+    color: white;
+    transition: color 0.3s;
 }
 
 .available-via-link:hover {
-    color: #CDFFFF; /* Optional: Change color on hover */
+    color: #FA892E;
 }
 
 .app-store-button {
+    margin-top: 10px;
     width: 100px;
-    margin: 0; /* Adjust margin to align properly */
-}
-
-.app-store-button {
-    display: block;
-    width: 100px;
-    margin-top: 40px;
-    margin-bottom: 40px; /* Ensures space between button and video */
 }
 
 .highlight {
     color: #FA892E;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 iphone-16-max {
-    display: block; /* Ensure it's treated as a block element */
-    width: 100%; /* Set width to ensure responsiveness */
-    max-width: 280px; /* Set the maximum width to resemble an iPhone */
-    margin: 0 auto; /* Center the container */
-    position: relative; /* Position it relatively for internal layout */
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 iphone-16-max video {
-    width: 100%; /* Make video fill the container width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any potential inline spacing */
+    width: 100%;
+    border-radius: 15px;
 }
 
 /* Responsive adjustments */
@@ -98,8 +88,8 @@ iphone-16-max video {
         font-size: 38px;
     }
 
-    .app-store-button {
-        margin-bottom: 10px; /* Ensures space between button and video */
+    .description {
+        font-size: 22px;
     }
 
     .video-container {
