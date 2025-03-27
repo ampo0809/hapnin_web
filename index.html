@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="css/normal.css">
 </head>
 <body>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1MFZ3D5E91"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1MFZ3D5E91');
+  </script>
     <div class="content">
       <h1 class="teaser">Show off what's hapnin around you!</h1>
       <b class="description">or check what's going on... <span class="highlight">around the world</span></b>
@@ -22,8 +30,8 @@
     </div>
     <script defer src="js/skin.js"></script>
     <iphone-16-max mode="dark">
-        <video autoplay loop muted playsinline>
-            <source src="resources/demo_video.mp4" type="video/mp4">
+      <video autoplay loop muted playsinline preload="auto">
+            <source src="https://hapnin-video-teaser-container.s3.eu-north-1.amazonaws.com/demo_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </iphone-16-max>
